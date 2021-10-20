@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
+import Contador from './components/Contador/Contador';
+import DibujosComplejos from './components/DibujosComplejos/DibujosComplejos';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div className="App">
+      <DibujosComplejos/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
