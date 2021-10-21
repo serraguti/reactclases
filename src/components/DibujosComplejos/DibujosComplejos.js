@@ -33,7 +33,7 @@ class DibujosComplejos extends Component {
                 //A DIFERENCIA DE EL CODIGO EN METODO
                 //AQUI PONDREMOS EL RETURN DIRECTO DEL CODIGO
                 //QUE DESEEMOS
-                return ( <p>{name}</p> );
+                return ( <p key={index}>{name}</p> );
             })}
         </div>);
     }
