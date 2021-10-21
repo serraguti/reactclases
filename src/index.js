@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import Contador from './components/Contador/Contador';
 import DibujosComplejos from './components/DibujosComplejos/DibujosComplejos';
 import Deportes from './components/Deportes/Deportes';
+import Numeros from './components/Numeros/Numeros';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <Deportes/>
+      <Numeros/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
