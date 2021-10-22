@@ -52,6 +52,19 @@ class Comics extends Component{
         });
     };
 
+    modificarComic = (index) => {
+      var titulo = document.getElementById("cajatitulo").value;
+      var imagen = document.getElementById("cajaimagen").value;
+      var descripcion = document.getElementById("cajadescripcion").value;
+      var comic = this.state.comics[index];
+      comic.titulo = titulo;
+      comic.imagen = imagen;
+      comic.descripcion = descripcion;
+      this.setState({
+        comics: this.state.comics
+      });
+    };
+
     eliminarComic = (index) => {
         //splice() RECIBE DOS PARAMETROS
         //1) INDICE A ELIMINAR
@@ -105,7 +118,8 @@ class Comics extends Component{
                 return (<Comic comic={comic} key={index}
                 seleccionarFavorito={this.seleccionarFavorito}
                 index={index}
-                eliminarComic={this.eliminarComic}/>);
+                eliminarComic={this.eliminarComic}
+                modificarComic={this.modificarComic}/>);
             })}
         </div>);
     }

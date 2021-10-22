@@ -14,6 +14,12 @@ class Comic extends Component{
             </button>
             <button onClick={() => {
                 var index = this.props.index;
+                this.props.modificarComic(index);
+            }} style={{backgroundColor:"blue", color:"white"}}>
+                Modificar Comic
+            </button>
+            <button onClick={() => {
+                var index = this.props.index;
                 this.props.eliminarComic(index);
             }} style={{backgroundColor:"red", color: "white"}}>
                 Eliminar comic

@@ -8,11 +8,16 @@ import DibujosComplejos from './components/DibujosComplejos/DibujosComplejos';
 import Deportes from './components/Deportes/Deportes';
 import Numeros from './components/Numeros/Numeros';
 import Comics from './components/Comics/Comics';
+import Router from './components/Router';
+import MenuRutas from './components/Rutas/MenuRutas';
+import EjemploSimple from './components/Formularios/EjemploSimple';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <Comics/>
+      <EjemploSimple/>
+      {/* <MenuRutas/>
+      <Router/> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
