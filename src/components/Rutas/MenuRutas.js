@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class MenuRutas extends Component {
     render() {
@@ -9,6 +10,7 @@ export default class MenuRutas extends Component {
                         <a href="/">Home</a>
                     </li>
                     <li>
+                        {/* <NavLink to={"/cine"}>Cine</NavLink> */}
                         <a href="/cine">Cine</a>
                     </li>
                     <li>

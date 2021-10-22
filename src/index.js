@@ -11,13 +11,15 @@ import Comics from './components/Comics/Comics';
 import Router from './components/Router';
 import MenuRutas from './components/Rutas/MenuRutas';
 import EjemploSimple from './components/Formularios/EjemploSimple';
+import Collatz from './components/Formularios/Collatz';
+import TablaMultiplicar from './components/Formularios/TablaMultiplicar';
+import TablaMultiplicarSelect from './components/Formularios/TablaMultiplicarSelect';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <EjemploSimple/>
-      {/* <MenuRutas/>
-      <Router/> */}
+      <TablaMultiplicarSelect/>
+      {/* <Router/> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
