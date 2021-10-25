@@ -14,11 +14,12 @@ import EjemploSimple from './components/Formularios/EjemploSimple';
 import Collatz from './components/Formularios/Collatz';
 import TablaMultiplicar from './components/Formularios/TablaMultiplicar';
 import TablaMultiplicarSelect from './components/Formularios/TablaMultiplicarSelect';
+import SeleccionMultiple from './components/Formularios/SeleccionMultiple';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
-      <TablaMultiplicarSelect/>
+      <SeleccionMultiple/>
       {/* <Router/> */}
     </div>
   </React.StrictMode>,
